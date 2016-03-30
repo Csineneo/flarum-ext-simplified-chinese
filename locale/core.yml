@@ -41,20 +41,20 @@ core:
 
     # These translations are used in the Dashboard page.
     dashboard:
-      beta_warning_text: "这是一个 <strong>Beta 版本</strong>，仅供测试，不要在生产环境部署。"
+      beta_warning_text: "这是一个 <strong>Beta 版本</strong>，仅供测试，不要部署在生产环境。"
       contributing_text: "Want to look for bugs and contribute? Read the <a>Contributing docs</a>."
       extension_text: "Interested in developing extensions? Read the <a>Extension docs</a>."
       features_text: "Got an idea to improve a feature? Tell us about it under the <a>Features tag</a>."
       support_text: "Found a bug? Please report it in our forum, under the <a>Support tag</a>."
       troubleshooting_text: "Having problems? Follow the instructions in the <a>Troubleshooting docs</a>."
       version_text: "Thanks for trying out Flarum! You are running version {version}."
-      welcome_text: "欢迎使用 Flarum Beta!"
+      welcome_text: "欢迎使用 Flarum Beta！"
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
       customize_text: "通过增加 LESS/CSS 代码以客制化论坛外观，此设置将覆盖 Flarum <a>缺省样式</a>。"
       submit_button: => core.ref.save_changes
-      title: Edit Custom CSS
+      title: 编辑客制化 CSS
 
     # These translations are used in the Edit Group modal dialog.
     edit_group:
@@ -139,9 +139,9 @@ core:
     # These translations are used in the Change Email modal dialog.
     change_email:
       confirmation_message: => core.ref.confirmation_email_sent
-	  confirm_password_label: Confirm Password
+      confirm_password_label: 再次键入密码
       dismiss_button: => core.ref.okay
-	  incorrect_password_message: 键入的密码不正确。
+      incorrect_password_message: 键入的密码不正确。
       submit_button: => core.ref.save_changes
       title: => core.ref.change_email
 
@@ -163,7 +163,7 @@ core:
       body_placeholder: 撰写贴文...
       discard_confirmation: "贴文尚未发布，是否丢弃？"
       submit_button: 发布
-	  title: => core.ref.start_a_discussion
+      title: => core.ref.start_a_discussion
       title_placeholder: 标题
 
     # These translations are used by the composer when editing a post.
@@ -213,7 +213,7 @@ core:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
       email_sent_message: 已将包含密码重设链接的邮件发送至该邮箱，若未收到请检查垃圾箱。
-	  not_found_message: 没有使用此邮箱地址注册的用户。
+      not_found_message: 没有使用此邮箱地址注册的用户。
       submit_button: 重设密码
       text: 请键入邮箱地址，我们将发送密码重设链接至该邮箱。
       title: 忘记密码
@@ -232,10 +232,10 @@ core:
     index:
       all_discussions_link: => core.ref.all_discussions
       cannot_start_discussion_button: 无法发布贴文
-	  mark_all_as_read_confirmation: "你确定要标记所有贴文为已读吗？"
+      mark_all_as_read_confirmation: "你确定要标记所有贴文为已读吗？"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       refresh_tooltip: 重新加载
-	  start_discussion_button: => core.ref.start_a_discussion
+      start_discussion_button: => core.ref.start_a_discussion
 
     # These translations are used by the sorting control above the discussion list.
     index_sort:
@@ -285,7 +285,7 @@ core:
     # These translations are displayed between posts in the post stream.
     post_stream:
       discussion_renamed_text: "{username} 将标题「{old}」更改为「{new}」"
-	  load_more_button: => core.ref.load_more
+      load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
       time_lapsed_text: "{period}后"
 
@@ -325,7 +325,7 @@ core:
       avatar_upload_button: 上传头像
       bio_placeholder: 介绍下自己
       discussions_link: => core.ref.discussions
-	  in_discussion_text: "In {discussion}"
+      in_discussion_text: "于 {discussion}"
       joined_date_text: "加入于 {ago}"
       online_text: 在线
       posts_load_more_button: => core.ref.load_more
@@ -410,7 +410,7 @@ core:
     settings: 设置
     sign_up: 注册
     some_others: "{count} 人|{count} 人"  # Referenced by flarum-likes.yml, flarum-mentions.yml
-	start_a_discussion: 添加贴文
+    start_a_discussion: 添加贴文
     username: 用户
     write_a_reply: 撰写回复...
     you: 你                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
