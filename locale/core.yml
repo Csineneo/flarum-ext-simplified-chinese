@@ -280,7 +280,7 @@ core:
       now_link: 末贴
       original_post_link: 首贴
       unread_text: "{count} 未读"
-      viewing_text: "{index} / {count} 篇贴文|{index} / {count} 篇贴文"
+      viewing_text: "{index}/{count}|{index}/{count}"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
