@@ -280,7 +280,7 @@ core:
       now_link: 末贴
       original_post_link: 首贴
       unread_text: "{count} 未读"
-      viewing_text: "{index}/{count}|{index}/{count}"
+      viewing_text: "{index} / {count}|{index} / {count}"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
@@ -334,7 +334,7 @@ core:
 
     # These translations are found on the user profile page (admin function).
     user_controls:
-      button: 用户管理
+      button: 操作 
       delete_button: => core.ref.delete
       delete_confirmation: "确定要删除此帐户？此帐户下的贴文均将被删除。"
       edit_button: => core.ref.edit

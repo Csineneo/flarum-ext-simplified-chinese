@@ -44,7 +44,7 @@ flarum-flags:
     post:
       dismiss_flag_tooltip: 取消举报
       flagged_by_text: "{username} 被举报"
-      flagged_by_with_reason_text: "{username} 因「{reason}」举报此帖"
+      flagged_by_with_reason_text: "{username} 因「{reason}」举报此贴"
 
     # These translations are used by the post control buttons.
     post_controls:
