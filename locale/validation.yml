@@ -21,23 +21,23 @@ validation:
   digits_between: ":attribute 必须介于 :min 至 :max 位数字之间"
   dimensions: ":attribute 图片大小非法。"
   distinct: ":attribute 包含重复的值"
-  email: ":attribute 必须是一个有效的邮箱地址"
+  email: ":attribute 必须是一个有效的邮箱位址"
   exists: "选择的 :attribute 无效"
-  file: ":attribute 必须是文档。"
+  file: ":attribute 必须是文件。"
   filled: ":attribute 不能为空"
   image: ":attribute 必须是图片"
   in: "属性:attribute 非法"
   in_array: ":attribute 不存在于 :other."
   integer: ":attribute 必须是整数"
-  ip: ":attribute 必须有效的 IP 地址"
+  ip: ":attribute 必须有效的 IP 位址"
   json: ":attribute 必须是合法的 JSON 字符串"
   max:
     numeric: ":attribute 不能大于 :max"
     file: ":attribute 不能大于 :max kb"
     string: ":attribute 不能多于 :max 个字符"
     array: ":attribute 不能多于 :max 项"
-  mimes: ":attribute 必须是 :values 类型文件"
-  mimetypes: ":attribute 必须是 :values 文档类型。"
+  mimes: ":attribute 必须是 :values 类型档案"
+  mimetypes: ":attribute 必须是 :values 文件类型。"
   min:
     numeric: ":attribute 不能小于 :min"
     file: ":attribute 不能小于 :min kb"
@@ -67,7 +67,7 @@ validation:
   url: ":attribute 格式非法"
 
   attributes:
-    username: 用户
+    username: 使用者
     password: 密码
     email: 邮箱
     title: 标题
@@ -79,5 +79,5 @@ validation:
 
   custom:
     username:
-      regex: "用户名仅能包含字母、数字、短划线"
+      regex: "使用者名称仅能包含字母、数字、短划线"
 

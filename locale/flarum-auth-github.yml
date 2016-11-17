@@ -11,11 +11,11 @@ flarum-auth-github:
     github_settings:
       client_id_label: Client ID
       client_secret_label: Client Secret
-      title: GitHub 设置
+      title: GitHub 设定
 
   # Translations in this namespace are used by the forum user interface.
   forum:
 
     # These translations are used in the Log In modal dialog.
     log_in:
-      with_github_button: 使用 GitHub 帐号登录
+      with_github_button: 使用 GitHub 帐号登入

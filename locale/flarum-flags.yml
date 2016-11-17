@@ -14,8 +14,8 @@ flarum-flags:
 
     # These translations are used in the Flags Settings modal dialog.
     settings:
-      guidelines_url_label: 论坛守则链接
-      title: 举报设置
+      guidelines_url_label: 论坛守则连结
+      title: 举报设定
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -37,12 +37,13 @@ flarum-flags:
     # These translations are used by the Flagged Posts dropdown, a.k.a. "the flag".
     flagged_posts:
       empty_text: 无举报
+      item_text: "{username} 在 <em>{discussion}</em>"
       title: => flarum-flags.ref.flagged_posts
       tooltip: => flarum-flags.ref.flagged_posts
 
     # These translations are used by the frame displayed around flagged posts.
     post:
-      dismiss_flag_tooltip: 取消举报
+      dismiss_flag_button: 取消举报
       flagged_by_text: "{username} 被举报"
       flagged_by_with_reason_text: "{username} 因「{reason}」举报此贴"
 

@@ -10,34 +10,41 @@ core:
     # These translations are used in the placeholder Add Extension modal dialog.
     add_extension:
       developer_text: "如果你是开发者，你可以<a>阅读文档</a>并自行开发延伸套件。"
-      install_text: "在此期间你可以造访<a>Flarum 社区</a>搜索延伸套件，并通过 Composer 手动安装。"
-      temporary_text: "终有一天，在不远的将来，此对话框将让你轻松地添加延伸套件。如我们所说，我们将创建一套生态系统！"
+      install_text: "在此期间你可以造访<a>Flarum 社群</a>搜寻延伸套件，并通过 Composer 手动安装。"
+      temporary_text: "终有一天，在不远的将来，此对话框将让你轻松地新增延伸套件。如我们所说，我们将建立一套生态系统！"
 
     # These translations are used in the Appearance page.
     appearance:
       colored_header_label: 彩色标头
       colors_heading: 颜色
       colors_text: "选择两种颜色作为论坛主色调。第一种作为突出显示颜色，第二种作为背景元素样式。"
+      custom_header_heading: 客制化标头
+      custom_header_text: "新增要显示在页面顶部的，在 Flarum 自有标头之上的 HTML。"
       custom_styles_heading: 客制化样式
-      custom_styles_text: 添加 LESS/CSS 代码以客制化论坛外观，此设置将覆盖 Flarum 缺省样式。
+      custom_styles_text: 新增 LESS/CSS 程式码以客制化论坛外观，此设定将覆盖 Flarum 预设样式。
       dark_mode_label: 暗黑模式
       edit_css_button: 编辑客制化 CSS
+      edit_header_button: 编辑客制化标头
       enter_hex_message: 请键入十六进制颜色代码。
+      favicon_heading: 站点图示
+      favicon_text: 上传图片做为论坛的站点图示。
+      logo_heading: Logo
+      logo_text: 上传图片做为论坛标题。
       submit_button: => core.ref.save_changes
 
     # These translations are used in the Basics page.
     basics:
       all_discussions_label: => core.ref.all_discussions
-      default_language_heading: 缺省语言
+      default_language_heading: 预设语言
       forum_description_heading: 论坛说明 
-      forum_description_text: 使用一到两句话简短描述论坛。这将会添加于 Meta 标签中，并显示于搜索引擎结果中。
+      forum_description_text: 使用一到两句话简短描述论坛。这将会添加于 Meta 标签中，并显示于搜寻引擎结果中。
       forum_title_heading: 论坛名称
       home_page_heading: 论坛首页
       home_page_text: "选择一个页面作为论坛首页，若要客制化，请使用论坛根目录对相对路径。"
-      saved_message: 更改已保存
+      saved_message: 更改已储存
       submit_button: => core.ref.save_changes
       welcome_banner_heading: 欢迎横幅
-      welcome_banner_text: 横幅文本将显示于「全部贴文」页面顶部，用以欢迎新到访的游客。
+      welcome_banner_text: 横幅文字将显示于「全部贴文」页面顶部，用以欢迎新到访的游客。
 
     # These translations are used in the Dashboard page.
     dashboard:
@@ -52,7 +59,7 @@ core:
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
-      customize_text: "通过增加 LESS/CSS 代码以客制化论坛外观，此设置将覆盖 Flarum <a>缺省样式</a>。"
+      customize_text: "通过增加 LESS/CSS 程式码以客制化论坛外观，此设定将覆盖 Flarum <a>预设样式</a>。"
       submit_button: => core.ref.save_changes
       title: 编辑客制化 CSS
 
@@ -61,19 +68,39 @@ core:
       color_label: 颜色
       delete_button: 删除群组
       delete_confirmation: "确定是否删除此群组？群组成员不会被删除。"
-      icon_label: 图标
-      icon_text: "键入任意 <a>FontAwesome</a> 图标名称，<em>无需</em>键入前缀 <code>fa-</code>"
+      icon_label: 图示
+      icon_text: "键入任意 <a>FontAwesome</a> 图示名称，<em>无需</em>键入前缀 <code>fa-</code>"
       name_label: 名称
       plural_placeholder: 群组（例如：管理组）
       singular_placeholder: 群组成员（例如：管理员）
       submit_button: => core.ref.save_changes
-      title: 添加群组
+      title: 新增群组
+
+    # These translations are used in the Edit Custom Header modal dialog.
+    edit_header:
+      customize_text: "新增要显示在页面顶部的，在 Flarum 自有标头之上的 HTML。"
+      submit_button: => core.ref.save_changes
+      title: 编辑客制化标头
+
+    # These translations are used in the email page of the admin interface.
+    email:
+      account_heading: SMTP 帐号
+      addresses_heading: 地址
+      driver_label: 驱动
+      encryption_label: 加密
+      from_label: 发信人
+      heading: => core.ref.email
+      host_label: 主机
+      password_label: => core.ref.password
+      port_label: 连接埠
+      server_heading: SMTP 伺服器
+      submit_button: => core.ref.save_changes
+      text: 配置 SMTP 设定及论坛发信地址。
+      username_label: => core.ref.username
 
     # These translations are used in the Extensions page.
     extensions:
-      add_button: 添加延伸套件
-      disable_button: 禁用
-      enable_button: 启用
+      add_button: 新增延伸套件
       settings_button: => core.ref.settings
       uninstall_button: 移除
 
@@ -87,16 +114,18 @@ core:
 
     # These translations are used in the navigation bar.
     nav:
-      appearance_button: 外观设置
+      appearance_button: 外观设定
       appearance_text: "客制化论坛色调、徽标以及其他元素"
-      basics_button: 基本设置
-      basics_text: "设置论坛名称、语言以及其他基本设置"
+      basics_button: 基本设定
+      basics_text: "设定论坛名称、语言以及其他基本设定"
       dashboard_button: 论坛概览
-      dashboard_text: 论坛数据综览
+      dashboard_text: 论坛资料综览
+      email_button: => core.ref.email
+      email_text: "配置论坛邮箱设定。"
       extensions_button: 延伸套件
-      extensions_text: 为你的论坛添加额外功能
-      permissions_button: 权限设置
-      permissions_text: 设置用户访问及操作权限
+      extensions_text: 为你的论坛新增额外功能
+      permissions_button: 权限设定
+      permissions_text: 设定使用者访问及操作权限
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
@@ -109,14 +138,15 @@ core:
       edit_and_delete_posts_label: 编辑和删除回复
       global_heading: 全局
       moderate_heading: 管理
-      new_group_button: 添加群组
+      new_group_button: 新增群组
       participate_heading: 操作
       read_heading: 访问
       rename_discussions_label: 更改标题
-      reply_to_discussions_label: 添加回复
+      reply_to_discussions_label: 新增回复
       sign_up_label: 注册帐户
-      start_discussions_label: 添加贴文
+      start_discussions_label: 新增贴文
       view_discussions_label: 查看贴文
+      view_post_ips_label: 查看 IP 地址
 
     # These translations are used in the dropdown menus on the Permissions page.
     permissions_controls:
@@ -133,13 +163,18 @@ core:
     settings:
       submit_button: => core.ref.save_changes
 
+    # These translations are used in image upload buttons.
+    upload_image:
+      remove_button: 移除
+      upload_button: 选择图片...
+
   # Translations in this namespace are used by the forum user interface.
   forum:
 
     # These translations are used in the Change Email modal dialog.
     change_email:
       confirmation_message: => core.ref.confirmation_email_sent
-      confirm_password_label: 再次键入密码
+      confirm_password_placeholder: => core.ref.confirm_password
       dismiss_button: => core.ref.okay
       incorrect_password_message: 键入的密码不正确。
       submit_button: => core.ref.save_changes
@@ -148,14 +183,14 @@ core:
     # These translations are used in the Change Password modal dialog.
     change_password:
       send_button: 发送密码重设邮件
-      text: 点击下面的按钮并检查邮件中的链接以重设密码。
+      text: 点击下面的按钮并检查邮件中的连结以重设密码。
       title: => core.ref.change_password
 
     # These translations are used by the composer controls.
     composer:
       close_tooltip: 关闭
-      exit_full_screen_tooltip: 退出全屏幕
-      full_screen_tooltip: 全屏幕
+      exit_full_screen_tooltip: 退出全萤幕
+      full_screen_tooltip: 全萤幕
       minimize_tooltip: 最小化
 
     # These translations are used by the composer when starting a discussion.
@@ -168,7 +203,7 @@ core:
 
     # These translations are used by the composer when editing a post.
     composer_edit:
-      discard_confirmation: "更改未保存，是否丢弃？"
+      discard_confirmation: "更改未储存，是否丢弃？"
       post_link: "发布 #{number} 于 {discussion}"
       submit_button: => core.ref.save_changes
 
@@ -187,7 +222,7 @@ core:
       delete_button: => core.ref.delete
       delete_confirmation: "确定是否删除此贴文？"
       delete_forever_button: => core.ref.delete_forever
-      log_in_to_reply_button: 登录以回复
+      log_in_to_reply_button: 登入以回复
       rename_button: 更改标题
       rename_text: "键入新标题："
       reply_button: => core.ref.reply
@@ -206,16 +241,17 @@ core:
       email_label: => core.ref.email
       password_label: => core.ref.password
       submit_button: => core.ref.save_changes
+      title: 编辑使用者
       username_label: => core.ref.username
 
     # These translations are used in the Forgot Password modal dialog.
     forgot_password:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
-      email_sent_message: 已将包含密码重设链接的邮件发送至该邮箱，若未收到请检查垃圾箱。
-      not_found_message: 没有使用此邮箱地址注册的用户。
+      email_sent_message: 已将包含密码重设连结的邮件发送至该邮箱，若未收到请检查垃圾箱。
+      not_found_message: 没有使用此邮箱位址注册的使用者。
       submit_button: 重设密码
-      text: 请键入邮箱地址，我们将发送密码重设链接至该邮箱。
+      text: 请键入邮箱位址，我们将发送密码重设连结至该邮箱。
       title: 忘记密码
 
     # These translations are used in the header and session dropdown menu.
@@ -223,9 +259,9 @@ core:
       admin_button: 管理后台
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
-      profile_button: 基本数据
-      search_placeholder: 搜索
-      settings_button: 个人设置
+      profile_button: 基本资料
+      search_placeholder: 搜寻
+      settings_button: 个人设定
       sign_up_link: => core.ref.sign_up
 
     # These translations are used on the index page, peripheral to the discussion list.
@@ -234,7 +270,7 @@ core:
       cannot_start_discussion_button: 无法发布贴文
       mark_all_as_read_confirmation: "你确定要标记所有贴文为已读吗？"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
-      refresh_tooltip: 重新加载
+      refresh_tooltip: 重新载入
       start_discussion_button: => core.ref.start_a_discussion
 
     # These translations are used by the sorting control above the discussion list.
@@ -248,12 +284,12 @@ core:
     # These translations are used in the Log In modal dialog.
     log_in:
       forgot_password_link: "忘记密码？"
-      invalid_login_message: 登录信息有误
+      invalid_login_message: 登入信息有误
       password_placeholder: => core.ref.password
       sign_up_text: "还没有帐户？ <a>立即注册</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
-      username_or_email_placeholder: 用户名或邮箱
+      username_or_email_placeholder: 使用者名称或邮箱
 
     # These translations are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
@@ -265,6 +301,7 @@ core:
 
     # These translations are used by tooltips displayed for individual posts.
     post:
+      edited_text: 已编辑
       edited_tooltip: "{username} 编辑于 {ago}"
       number_tooltip: "发布 #{number}"
 
@@ -284,27 +321,29 @@ core:
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      discussion_renamed_text: "{username} 将标题「{old}」更改为「{new}」"
+      discussion_renamed_old_tooltip: '旧标题是: 「{old}」'
+      discussion_renamed_text: "{username} 将标题更改为 「{new}」。"
       load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
       time_lapsed_text: "{period}后"
 
     # These translations are used by the search results dropdown list.
     search:
-      all_discussions_button: '搜索「{query}」'
+      all_discussions_button: '搜寻「{query}」'
       discussions_heading: => core.ref.discussions
-      users_heading: 用户
+      users_heading: 使用者
 
     # These translations are used in the Settings page.
     settings:
       account_heading: 帐户
       change_email_button: => core.ref.change_email
       change_password_button: => core.ref.change_password
+      confirm_password: 确认密码
       notifications_heading: => core.ref.notifications
       notify_by_email_heading: => core.ref.email
       notify_by_web_heading: 网页
       notify_discussion_renamed_label: 你的贴文标题被更改
-      privacy_disclose_online_label: 公开展示我的在线状态
+      privacy_disclose_online_label: 公开展示我的线上状态
       privacy_heading: 隐私
       title: => core.ref.settings
 
@@ -312,7 +351,7 @@ core:
     sign_up:
       email_placeholder: => core.ref.email
       dismiss_button: => core.ref.okay
-      log_in_text: "已有帐户？ <a>登录</a>"
+      log_in_text: "已有帐户？ <a>登入</a>"
       password_placeholder: => core.ref.password
       submit_button: => core.ref.sign_up
       title: => core.ref.sign_up
@@ -323,11 +362,12 @@ core:
     user:
       avatar_remove_button: 移除头像
       avatar_upload_button: 上传头像
+      avatar_upload_tooltip: 上传新头像
       bio_placeholder: 介绍下自己
       discussions_link: => core.ref.discussions
       in_discussion_text: "于 {discussion}"
       joined_date_text: "加入于 {ago}"
-      online_text: 在线
+      online_text: 线上
       posts_load_more_button: => core.ref.load_more
       posts_link: 回复
       settings_link: => core.ref.settings
@@ -358,9 +398,9 @@ core:
 
     # These translations are displayed as error messages.
     error:
-      generic_message: "糟糕，出错啦！请重新加载页面再试一次。"
+      generic_message: "糟糕，出错啦！请重新载入页面再试一次。"
       not_found_message: 请求的资源不存在
-      permission_denied_message: 没有权限运行此操作
+      permission_denied_message: 没有权限执行此操作
       rate_limit_exceeded_message: 操作太频繁，请稍后再试。
 
     # These translations are used as suffixes when abbreviating numbers.
@@ -374,13 +414,31 @@ core:
       three_text: "{first}, {second} 以及 {third}"
       two_text: "{first} 及 {second}"
 
-  # Translations in this namespace are used in basic HTML interface.
-  basic:
-    javascript_disabled_message: 请使用现代浏览器并启用 JavaScript 以获取最佳浏览体验。
-    load_error_message: 尝试加载完整版本的论坛时出错。
-    loading_text: 加载中...
-    next_page_button: 下一页
-    previous_page_button: 上一页
+  # Translations in this namespace are used in views other than Flarum's normal JS client.
+  views:
+
+    # Translations in this namespace are displayed by the basic HTML content loader.
+    content:
+      javascript_disabled_message: 请使用现代浏览器并启用 JavaScript 以获取最佳浏览体验。
+      load_error_message: 尝试载入完整版本的论坛时出错。
+      loading_text: 载入中...
+
+    # Translations in this namespace are displayed in the basic HTML discussion view.
+    discussion:
+      next_page_button: => core.ref.next_page
+      previous_page_button: 上一页
+
+    # Translations in this namespace are displayed by the basic HTML discussion index.
+    index:
+      all_discussions_heading: => core.ref.all_discussions
+      next_page_button: => core.ref.next_page
+
+    # Translations in this namespace are displayed by the Reset Password interface.
+    reset:
+      confirm_password_label: => core.ref.confirm_password
+      password_label: => core.ref.password
+      submit_button: 重设密码
+      title: => core.ref.reset_your_password
 
   ##
   # REUSED STRINGS - These keys should not be used directly in code!
@@ -397,21 +455,23 @@ core:
     discussions: 贴文
     edit: 编辑
     email: 邮箱
-    load_more: 加载更多
-    log_in: 登录
-    log_out: 注销
+    load_more: 载入更多
+    log_in: 登入
+    log_out: 登出
     mark_all_as_read: 标记所有为已读
+    next_page: 下一页
     notifications: 通知
     okay: 好                                     # Referenced by flarum-tags.yml
     password: 密码
     reply: 回复                                 # Referenced by flarum-mentions.yml
+    reset_your_password: 重设密码
     restore: 还原
-    save_changes: 保存更改                   # Referenced by flarum-tags.yml
-    settings: 设置
+    save_changes: 储存更改                   # Referenced by flarum-tags.yml
+    settings: 设定
     sign_up: 注册
     some_others: "{count} 人|{count} 人"  # Referenced by flarum-likes.yml, flarum-mentions.yml
-    start_a_discussion: 添加贴文
-    username: 用户
+    start_a_discussion: 新增贴文
+    username: 使用者
     write_a_reply: 撰写回复...
     you: 你                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
 
@@ -428,7 +488,7 @@ core:
       body: |
         你好，{username}！
 
-        此邮箱地址被用于注册 {forum}，若确定是你本人注册的，请点击下面的链接即可激活你的帐户：
+        此邮箱位址被用于注册 {forum}，若确定是你本人注册的，请点击下面的连结即可激活你的帐户：
 
         {url}
 
@@ -436,11 +496,11 @@ core:
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
-      subject: 邮箱地址验证
+      subject: 邮箱位址验证
       body: |
         你好，{username}!
 
-        你在 {forum} 的邮箱地址被更改为此邮箱，若确定是你本人进行的更改，请点击下面的链接即可完成邮箱验证：
+        你在 {forum} 的邮箱位址被更改为此邮箱，若确定是你本人进行的更改，请点击下面的连结即可完成邮箱验证：
 
         {url}
 
@@ -448,11 +508,11 @@ core:
 
     # These translations are used in emails sent when users ask to reset their passwords.
     reset_password:
-      subject: 密码重设
+      subject: => core.ref.reset_your_password
       body: |
         你好，{username}！
 
-        收到来自 {forum} 的密码重设请求，若确定是你本人进行才操作，请点击下面的链接重设密码：
+        收到来自 {forum} 的密码重设请求，若确定是你本人进行才操作，请点击下面的连结重设密码：
 
         {url}
 
