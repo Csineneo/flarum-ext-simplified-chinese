@@ -30,7 +30,7 @@ flarum-likes:
 
     # These translations are used by the Users Who Like This modal dialog.
     post_likes:
-      title: 说赞的使用者
+      title: 说赞的用户
 
     # These translations are used in the Settings page.
     settings:

@@ -18,17 +18,17 @@ flagrow-image-upload:
                 max_width: 最大宽度
                 max_height: 最大高度
             imgur:
-                title: Imgur 设定
+                title: Imgur 设置
                 client_id: Client-ID
         buttons:
-            save: 存储设定
+            save: 存储设置
         help_texts:
             description: >
-                设定图片上传服务及偏好
+                设置图片上传服务及偏好
             upload_method: >
                 在此处你可以选择上传图片的方式
-                当你选择后相应的设定将会显示出来
+                当你选择后相应的设置将会显示出来
             resize: >
                 是否要在上传前就调整图片大小
-                你可以设定最大宽度与最大高度，以 px 为单位
+                你可以设置最大宽度与最大高度，以 px 为单位
                 调整大小不会变更图片长宽比例

@@ -72,7 +72,7 @@ moment.locale('zh', {
     yy: '%d 年'
   },
   week: {
-    // GB/T 7408-1994《资料元和交换格式·资讯交换·日期和时间表示法》与ISO 8601:1988等效
+    // GB/T 7408-1994《数据元和交换格式·信息交换·日期和时间表示法》与ISO 8601:1988等效
     dow: 0, // Sunday is the first day of the week.
     doy: 4  // The week that contains Jan 4th is the first week of the year.
   }

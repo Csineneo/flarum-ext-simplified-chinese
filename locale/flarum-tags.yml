@@ -26,7 +26,7 @@ flarum-tags:
 
     # These translations are used in the navigation bar.
     nav:
-      tags_button: 节点设定
+      tags_button: 节点设置
       tags_text: 管理论坛节点列表
 
     # These translations are used in the Permissions page of the admin interface.
@@ -39,10 +39,10 @@ flarum-tags:
     tag_settings:
       range_separator_text: " 至 "
       required_primary_heading: 主节点数量
-      required_primary_text: 设定贴文主节点数量范围
+      required_primary_text: 设置贴文主节点数量范围
       required_secondary_heading: 次节点数量
-      required_secondary_text: 设定贴文次节点数量范围
-      title: 节点设定
+      required_secondary_text: 设置贴文次节点数量范围
+      title: 节点设置
 
     # These translations are used in the Tags page.
     tags:
@@ -50,7 +50,7 @@ flarum-tags:
       create_tag_button: => flarum-tags.ref.create_tag
       primary_heading: 主节点
       secondary_heading: 次节点
-      settings_button: 设定
+      settings_button: 设置
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -96,6 +96,6 @@ flarum-tags:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    create_tag: 新增节点
+    create_tag: 添加节点
     name: 节点名称
     tags: 节点

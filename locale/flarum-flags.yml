@@ -14,8 +14,8 @@ flarum-flags:
 
     # These translations are used in the Flags Settings modal dialog.
     settings:
-      guidelines_url_label: 论坛守则连结
-      title: 举报设定
+      guidelines_url_label: 论坛守则链接
+      title: 举报设置
 
   # Translations in this namespace are used by the forum user interface.
   forum:
