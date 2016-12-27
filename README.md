@@ -1,11 +1,11 @@
-### Flarum 正体中文语言包
+### Flarum 简体中文语言包
 
 - ### 需求
 Flarum v0.1.0-beta.6
 
 - ### 安装
 ```
-composer require csineneo/flarum-ext-traditional-chinese
+composer require csineneo/flarum-ext-simplified-chinese
 ```
 
 - ### 示例
@@ -14,7 +14,8 @@ https://vivaldi.club
 - ### 问题
 若有任何问题，请[在此](https://vivaldi.club/t/flarum)提出
 
-- ### 支援的延伸套件
+- ### 支援的扩展
+	- amaurycarrade-syndication
 	- datitisev-dashboard
 	- davis-securehttps
 	- flagrow-analytics
@@ -37,3 +38,4 @@ https://vivaldi.club
 	- flarum-tags
 	- sijad-links
 	- sijad-pages
+	- xengine-signature
