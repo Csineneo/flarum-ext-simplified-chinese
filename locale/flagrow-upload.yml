@@ -13,6 +13,7 @@ flagrow-upload:
             local: 本地
             aws-s3: 亚马逊 S3
             imgur: Imgur
+            ovh-svfs: OVH SVFS
         labels:
             upload_method: 上传方式
             preferences:
@@ -41,6 +42,12 @@ flagrow-upload:
                 secret: Secret
                 bucket: Bucket
                 region: 区域
+            ovh-svfs:
+                title: OVH SVFS 存储设置
+                container: 容器
+                tenantid: Tenant ID
+                username: 用户名
+                password: 密码
         buttons:
             save: 保存更改
         help_texts:
