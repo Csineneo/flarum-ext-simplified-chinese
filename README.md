@@ -17,6 +17,7 @@ https://vivaldi.club
 - ### 支援的扩展
   - amaurycarrade-syndication
   - antoinefr-money
+  - avatar4eg-transliterator
   - avatar4eg-users-list
   - datitisev-dashboard
   - davis-securehttps
