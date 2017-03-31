@@ -20,4 +20,4 @@ sijad-auth-steam:
 
     # These translations are used in the Log In modal dialog.
     log_in:
-      with_steam_button: 以 Steam 帐号登录
+      with_steam_button: 透过 Steam 帐号登录

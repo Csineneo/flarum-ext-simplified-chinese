@@ -11,4 +11,4 @@ johnhearfield-oauth-google:
 
   forum:
     log_in:
-      with_google_button: "以 Google 帐号登录"
+      with_google_button: "透过 Google 帐号登录"
