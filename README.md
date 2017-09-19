@@ -1,7 +1,7 @@
 ### Flarum 简体中文语言包
 
 - ### 需求
-Flarum v0.1.0-beta.6
+Flarum v0.1.0-beta.7
 
 - ### 安装
 ```
@@ -19,6 +19,8 @@ https://vivaldi.club
   - antoinefr-money
   - avatar4eg-transliterator
   - avatar4eg-users-list
+  - config.js
+  - core
   - datitisev-dashboard
   - davis-securehttps
   - davis-socialprofile
@@ -50,12 +52,15 @@ https://vivaldi.club
   - issyrocks12-filter
   - issyrocks12-twofactor
   - johnhearfield-oauth-google
+  - krombox-auth-wordpress
   - pnobbe-oauth-discord
+  - reflar-gamification
   - sijad-auth-steam
   - sijad-google-analytics
   - sijad-links
   - sijad-pages
   - sijad-recaptcha
+  - validation
   - wiseclock-login2see
   - wiseclock-reply2see
   - wuethrich44-sso
