@@ -1,0 +1,42 @@
+flagrow-masquerade:
+    forum:
+        alerts:
+            profile-completion-required: >
+                请完成以下必填项
+        buttons:
+            view-profile: 查看数据卡
+            save-profile: 保存
+    admin:
+        buttons:
+            add-field: 添加字段
+            edit-field: 编辑字段
+            delete-field: 删除字段
+        permissions:
+            have-profile: 有 masquerade 数据卡
+            view-profile: 查看 masquerade 数据卡
+        menu:
+            description: >
+                配置用户数据卡字段
+        fields:
+            add: 添加字段 {field}
+            edit: 编辑字段 {field}
+            name: 字段名称
+            name-help: >
+                公开可见且不可翻译的字段标签
+            description: 字段说明
+            description-help: >
+                可选说明以解释这个字段的用途
+            required: 标记为必填项
+            on_bio: 在用户个人数据总显示这个字段
+            validation: 校验
+            validation-help: >
+                查看支持的 <a>Laravel validation rules</a>，例如:
+                "string,min:5" 或 "url".
+            prefix: 字段前缀
+            prefix-help: >
+                在这个字段前显示填写的内容
+            icon: 小图标
+            icon-help: >
+                在这个字段前显示小图标。可用的小图标请查看 <a>FontAwesome 网站</a>，无需「fa-」前缀
+            force-user-to-completion: 强制用户必须完成数据卡
+            disable-user-bio: 停用用户个人数据字段
