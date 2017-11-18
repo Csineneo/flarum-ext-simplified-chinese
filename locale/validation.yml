@@ -4,11 +4,13 @@ validation:
   accepted: ":attribute 必须接受"
   active_url: ":attribute 不是合法的 URL"
   after: ":attribute 必须是一个在 :date 之后的日期"
+  after_or_equal: ":attribute 必须是一个在 :date 当天或之后的日期"
   alpha: ":attribute 仅能由字母组成"
   alpha_dash: ":attribute 仅能由字母、数字和连接号组成"
   alpha_num: ":attribute 仅能由字母和数字组成"
   array: ":attribute 必须是一个数组"
   before: ":attribute 必须是一个在 :date 之前的日期"
+  before_or_equal: ":attribute 必须是一个在 :date 当天或之前的日期"
   between:
     numeric: ":attribute 必须介于 :min 至 :max 之间"
     file: ":attribute 必须介于 :min 至 :max kb 之间"
