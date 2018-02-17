@@ -1,5 +1,3 @@
-# https://github.com/flarum/flarum-ext-english/blob/master/locale/core.yml
-
 core:
 
   ##
@@ -21,12 +19,15 @@ core:
       colored_header_label: 彩色标头
       colors_heading: 颜色
       colors_text: "选择两种颜色作为论坛主色调。第一种作为突出显示颜色，第二种作为背景元素样式。"
+      custom_footer_heading: 客制化页脚
+      custom_footer_text: => core.ref.custom_footer_text
       custom_header_heading: 客制化标头
       custom_header_text: "添加要显示在页面顶部的，在 Flarum 自有标头之上的 HTML。"
       custom_styles_heading: 客制化样式
       custom_styles_text: 添加 LESS/CSS 代码以客制化论坛外观，此设置将覆盖 Flarum 缺省样式。
       dark_mode_label: 暗黑模式
       edit_css_button: 编辑客制化 CSS
+      edit_footer_button: => core.ref.custom_footer_title
       edit_header_button: 编辑客制化标头
       enter_hex_message: 请键入十六进制颜色代码。
       favicon_heading: 站点图标
@@ -52,20 +53,19 @@ core:
 
     # These translations are used in the Dashboard page.
     dashboard:
-      beta_warning_text: "这是一个 <strong>Beta 版本</strong>，仅供测试，不要部署在生产环境。"
-      contributing_text: "Want to look for bugs and contribute? Read the <a>Contributing docs</a>."
-      extension_text: "Interested in developing extensions? Read the <a>Extension docs</a>."
-      features_text: "Got an idea to improve a feature? Tell us about it under the <a>Features tag</a>."
-      support_text: "Found a bug? Please report it in our forum, under the <a>Support tag</a>."
-      troubleshooting_text: "Having problems? Follow the instructions in the <a>Troubleshooting docs</a>."
-      version_text: "Thanks for trying out Flarum! You are running version {version}."
-      welcome_text: "欢迎使用 Flarum Beta！"
+      help_link: 取得帮助
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
       customize_text: "通过增加 LESS/CSS 代码以客制化论坛外观，此设置将覆盖 Flarum <a>缺省样式</a>。"
       submit_button: => core.ref.save_changes
       title: 编辑客制化 CSS
+
+    # These translations are used in the Edit Custom Footer modal dialog.
+    edit_footer:
+      customize_text: => core.ref.custom_footer_text
+      submit_button: => core.ref.save_changes
+      title: => core.ref.custom_footer_title
 
     # These translations are used in the Edit Group modal dialog.
     edit_group:
@@ -180,7 +180,6 @@ core:
     change_email:
       confirmation_message: => core.ref.confirmation_email_sent
       confirm_password_placeholder: => core.ref.confirm_password
-      remember_me_label: 记住我
       dismiss_button: => core.ref.okay
       incorrect_password_message: 键入的密码不正确。
       submit_button: => core.ref.save_changes
@@ -198,6 +197,7 @@ core:
       exit_full_screen_tooltip: 退出全屏幕
       full_screen_tooltip: 全屏幕
       minimize_tooltip: 最小化
+      preview_tooltip: 预览
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
@@ -298,6 +298,7 @@ core:
       forgot_password_link: "忘记密码？"
       invalid_login_message: 登录信息有误
       password_placeholder: => core.ref.password
+      remember_me_label: 记住我
       sign_up_text: "还没有帐户？ <a>立即注册</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
@@ -355,7 +356,6 @@ core:
       account_heading: 帐户
       change_email_button: => core.ref.change_email
       change_password_button: => core.ref.change_password
-      confirm_password: 确认密码
       notifications_heading: => core.ref.notifications
       notify_by_email_heading: => core.ref.email
       notify_by_web_heading: 网页
@@ -380,7 +380,6 @@ core:
       avatar_remove_button: 移除头像
       avatar_upload_button: 上传头像
       avatar_upload_tooltip: 上传新头像
-      bio_placeholder: 介绍下自己
       discussions_link: => core.ref.discussions
       in_discussion_text: "于 {discussion}"
       joined_date_text: "加入于 {ago}"
@@ -445,61 +444,36 @@ core:
       next_page_button: => core.ref.next_page
       previous_page_button: 上一页
 
+    # Translations in this namespace are displayed when Flarum encounters an error.
+    error:
+      403_message: 你没有权限访问此页面
+      404_message: 你访问的页面不存在
+      404_return_link: "返回 {forum}"
+      500_message: 加载页面时出错。
+      503_message: "{forum} 正在维护中，请稍后再访问。"
+
     # Translations in this namespace are displayed by the basic HTML discussion index.
     index:
       all_discussions_heading: => core.ref.all_discussions
       next_page_button: => core.ref.next_page
+      previous_page_button: => core.ref.previous_page
+
+    # Translations in this namespace are displayed by the Log Out confirmation interface.
+    log_out:
+      log_out_button: => core.ref.log_out
+      log_out_confirmation: "你确定要注销 {forum}?"
+      title: => core.ref.log_out
 
     # Translations in this namespace are displayed by the Reset Password interface.
-    reset:
+    reset_password:
       confirm_password_label: => core.ref.confirm_password
-      password_label: => core.ref.password
+      new_password_label: 新密码
       submit_button: 重设密码
       title: => core.ref.reset_your_password
 
   # Translations in this namespace are used in messages output by the API.
   api:
     invalid_username_message: "用户名仅能包含字母、数字及横线"
-
-  ##
-  # REUSED STRINGS - These keys should not be used directly in code!
-  ##
-
-  # Translations in this namespace are referenced by two or more unique keys.
-  ref:
-    all_discussions: 全部贴文
-    change_email: 更改邮箱
-    change_password: 更改密码
-    confirmation_email_sent: "验证邮件已发送至 {email}，若未收到请检查垃圾箱。"
-    delete: 删除
-    delete_forever: 永久删除
-    discussions: 贴文
-    edit: 编辑
-    email: 邮箱
-    load_more: 加载更多
-    log_in: 登录
-    log_out: 注销
-    mark_all_as_read: 标记所有为已读
-    next_page: 下一页
-    notifications: 通知
-    okay: 好                                     # Referenced by flarum-tags.yml
-    password: 密码
-    rename: 重命名
-    reply: 回复                                 # Referenced by flarum-mentions.yml
-    reset_your_password: 重设密码
-    restore: 还原
-    save_changes: 保存更改                   # Referenced by flarum-tags.yml
-    settings: 设置
-    sign_up: 注册
-    some_others: "{count} 人|{count} 人"  # Referenced by flarum-likes.yml, flarum-mentions.yml
-    start_a_discussion: 添加贴文
-    username: 用户
-    write_a_reply: 撰写回复...
-    you: 你                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
-
-  ##
-  # EMAIL CONTENT
-  ##
 
   # Translations in this namespace are used in emails sent by the forum.
   email:
@@ -516,6 +490,7 @@ core:
 
         若非你本人注册，请忽略此邮件。
 
+
     # These translations are used in emails sent when users change their email address.
     confirm_email:
       subject: 邮箱地址验证
@@ -527,6 +502,7 @@ core:
         {url}
 
         若非你本人行为，请忽略此邮件。
+
 
     # These translations are used in emails sent when users ask to reset their passwords.
     reset_password:
@@ -540,9 +516,52 @@ core:
 
         若非你本人行为或不想重设密码，请忽略此邮件。
 
+
   ##
-  # GROUP NAMES - These keys are translated at the back end.
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
   ##
+  
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    all_discussions: 全部贴文
+    change_email: 更改邮箱
+    change_password: 更改密码
+    color: 颜色
+    confirm_password: 确认密码
+    confirmation_email_sent: "验证邮件已发送至 {email}，若未收到请检查垃圾箱。"
+    custom_footer_text: 添加 HTML 代码显示于页面底部。
+    custom_footer_title: 编辑客制化页脚
+    custom_header_text: "添加要显示在页面顶部的，在 Flarum 自有标头之上的 HTML。"
+    custom_header_title: 编辑客制化标头
+    delete: 删除
+    delete_forever: 永久删除
+    discussions: 贴文
+    edit: 编辑
+    email: 邮箱
+    load_more: 加载更多
+    log_in: 登录
+    log_out: 注销
+    mark_all_as_read: 标记所有为已读
+    next_page: 下一页
+    notifications: 通知
+    okay: 好                                     # Referenced by flarum-tags.yml
+    password: 密码
+    posts: 贴文
+    remove: 移除
+    previous_page: 上一页
+    rename: 重命名
+    reply: 回复                                 # Referenced by flarum-mentions.yml
+    reset_your_password: 重设密码
+    restore: 还原
+    save_changes: 保存更改                   # Referenced by flarum-tags.yml
+    settings: 设置
+    sign_up: 注册
+    some_others: "{count} 人|{count} 人"  # Referenced by flarum-likes.yml, flarum-mentions.yml
+    start_a_discussion: 添加贴文
+    username: 用户
+    users: 用户
+    write_a_reply: 撰写回复...
+    you: 你                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
 
   # Translations in this namespace are used to translate default group names.
   group:
