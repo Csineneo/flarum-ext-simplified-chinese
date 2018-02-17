@@ -7,6 +7,7 @@ antoinefr-money:
       moneyforpost: 每条回复可获取
       moneyfordiscussion: 每篇贴文可获取
       moneyname: 货币名称
+      postminimumlength: 可获取奖励的最小贴文长度（0 表示不限制）
     permissions:
       edit_money_label: 修改资产
   forum:

@@ -1,3 +1,5 @@
+# https://github.com/krombox/flarum-ext-auth-wordpress/blob/master/locale/en.yml
+#
 krombox-auth-wordpress:
     forum:
         log_in:
@@ -16,4 +18,3 @@ krombox-auth-wordpress:
                 login-button-title: 登录按钮文本
                 login-button-color: 登录按钮前景色
                 login-button-bg-color: 登录按钮背景色
-
