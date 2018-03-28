@@ -1,0 +1,29 @@
+flagrow-canned-messages:
+    admin:
+        buttons:
+            add-message: 添加消息
+            save-message: 保存消息
+            delete-message: 删除消息
+            configure-messages: 点此设置消息
+            configure-advanced: 高端设置
+        menu:
+            title: 罐头消息
+            description: >
+                自订 bbcode 罐头消息
+        strings:
+            key: BBcode
+            locale: 语言
+            style: 样式
+            content: 内容
+        locales:
+            all: 全部
+        settings:
+            title: 罐头消息设置
+            bbtag: 自订 BBcode 标签
+            bbtag-help: >
+                在此可以更高用于罐头消息的 bbcode。更改此设置将导致已存在的罐头消息无法显示。
+                您仅可以使用大写英文本母「A-Z」及短划线「-」和「_」。
+                不要忘记在更改设置后清空缓存。
+    forum:
+        bbcode:
+            invalid-key: 这里有一条消息，但是内容已经被删除或者在当前语言环境下不可用
