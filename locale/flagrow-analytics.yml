@@ -19,8 +19,8 @@ flagrow-analytics:
         piwikPrependDomain: 追踪时将网站域名添加到页面标题
         piwikHideAliasUrl: 在「外链」报告中，隐藏已知别名链接的点击量
         piwikAliasUrl: 别名链接
-        piwikTrackAccounts: 追踪个人用户帐户Track individual user accounts
-        piwikAuthToken: 验证令牌 config->users
+        piwikTrackAccounts: 追踪个人用户帐户
+        piwikAuthToken: 验证令牌
 
       placeholder:
         piwikAuthToken: |
