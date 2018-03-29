@@ -1,0 +1,15 @@
+flagrow-linguist:
+    admin:
+        buttons:
+            add-string: 添加字符串
+            save-string: 保存字符串
+            delete-string: 删除字符串
+        menu:
+            description: >
+                自订翻译
+        strings:
+            key: Key
+            locale: 语言
+            value: 译文
+        locales:
+            all: 全部

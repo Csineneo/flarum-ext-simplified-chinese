@@ -1,0 +1,16 @@
+flagrow-subscribed:
+    forum:
+        settings:
+            defaults_label: 将「{setting}」设为缺省启用
+            forced_label: 强制为所有人启用「{setting}」
+            notify_discussion_created_label: 有人添加贴文时
+            notify_user_created_label: 有人注册时
+        notifications:
+            discussion_created_text: "{username} 添加贴文"
+            user_created_text: "新会员 {username}"
+    admin:
+        menu:
+            description: 配置（缺省）会员订阅
+        permission:
+            subscribe_to_discussion_created: 允许接收添加贴文的通知
+            subscribe_to_user_created: 允许接收新会员注册的通知

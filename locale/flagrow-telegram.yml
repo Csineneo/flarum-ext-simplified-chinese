@@ -11,7 +11,7 @@ flagrow-telegram:
         enableNotifications: 启用通知
 
   forum:
-    log_in_with_telegram_button: 以 Telegram 帐号登录
+    log_in_with_telegram_button: 透过 Telegram 帐号登录
 
     settings:
       notify_by_telegram_heading: Telegram

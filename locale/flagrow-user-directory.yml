@@ -1,0 +1,22 @@
+flagrow-user-directory:
+    forum:
+        search:
+            users_heading: '在全部会员中搜索「{query}」'
+        page:
+            nav: 会员目录
+            sort:
+                relevance: 相关度
+                default: 缺省
+                username_az: 会员名 (a-z)
+                username_za: 会员名 (z-a)
+                newest: 最新
+                oldest: 最早
+                seen_recent: 最新上线
+                seen_oldest: 长期未登陆
+                most_posts: 最多回复
+                least_posts: 最少回复
+                most_discussions: 最多贴文
+                least_discussions: 最少贴文
+    admin:
+        permissions:
+            view_user_directory: 查看会员目录
