@@ -48,4 +48,4 @@ datitisev-dashboard:
       clientSecret_label: Client Secret
 
       graph_heading: 仪表盘
-      interval_label: 数据更新频率，以分钟计（整数），缺省为 10 分钟
+      interval_label: 数据更新频率，以分钟计（整数），默认为 10 分钟

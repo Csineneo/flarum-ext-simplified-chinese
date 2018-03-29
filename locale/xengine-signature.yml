@@ -22,13 +22,13 @@ xengine-signature:
         settings:
             maximum_image_width:
                 description: 最大图片宽度
-                placeholder : 350（缺省）
+                placeholder : 350（默认）
             maximum_image_height:
                 description : 最大累计图片高度
-                placeholder : 500（缺省）
+                placeholder : 500（默认）
             maximum_image_count:
                 description : 最大图片数
-                placeholder : 5（缺省）
+                placeholder : 5（默认）
             maximum_char_limit:
                 description : 最大字符数（仅计算字符数量，不包含 HTML 标签）
-                placeholder : 1000（缺省）
+                placeholder : 1000（默认）

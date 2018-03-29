@@ -24,7 +24,7 @@ core:
       custom_header_heading: 客制化标头
       custom_header_text: "添加要显示在页面顶部的，在 Flarum 自有标头之上的 HTML。"
       custom_styles_heading: 客制化样式
-      custom_styles_text: 添加 LESS/CSS 代码以客制化论坛外观，此设置将覆盖 Flarum 缺省样式。
+      custom_styles_text: 添加 LESS/CSS 代码以客制化论坛外观，此设置将覆盖 Flarum 默认样式。
       dark_mode_label: 暗黑模式
       edit_css_button: 编辑客制化 CSS
       edit_footer_button: => core.ref.custom_footer_title
@@ -39,7 +39,7 @@ core:
     # These translations are used in the Basics page.
     basics:
       all_discussions_label: => core.ref.all_discussions
-      default_language_heading: 缺省语言
+      default_language_heading: 默认语言
       forum_description_heading: 论坛说明 
       forum_description_text: 使用一到两句话简短描述论坛。这将会添加于 Meta 标签中，并显示于搜索引擎结果中。
       forum_title_heading: 论坛名称
@@ -57,7 +57,7 @@ core:
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
-      customize_text: "通过增加 LESS/CSS 代码以客制化论坛外观，此设置将覆盖 Flarum <a>缺省样式</a>。"
+      customize_text: "通过增加 LESS/CSS 代码以客制化论坛外观，此设置将覆盖 Flarum <a>默认样式</a>。"
       submit_button: => core.ref.save_changes
       title: 编辑客制化 CSS
 

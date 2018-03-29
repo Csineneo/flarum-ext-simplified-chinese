@@ -73,7 +73,7 @@ flagrow-mason:
                 删除字段？
         settings:
             fields-section-title: 自定义字段标题
-            fields-section-title-placeholder: 缺省不显示标题
+            fields-section-title-placeholder: 默认不显示标题
             fields-section-title-help: >
                 用户将在字段上看到这个文本
             column-count: 显示字段数目
@@ -84,10 +84,10 @@ flagrow-mason:
             fields-in-hero: 字段作为帖文横幅展示，而不是首帖
             hide-empty-fields-section: 当所有字段都为空且不可见时，隐藏标题及控制项
             hide-empty-fields-section-help: >
-                缺省为始终显示，启用此选项后，当所有字段都为空时，「编辑字段」按钮仅在「回复」下拉列表中可用
+                默认为始终显示，启用此选项后，当所有字段都为空时，「编辑字段」按钮仅在「回复」下拉列表中可用
             tags-as-field: 将节点击择作为一个字段显示
             tags-as-field-help: >
-                这将隐藏缺省节点击择并以自定义下拉列表代替。这仅适用于最多一个主节点和一个次节点！
+                这将隐藏默认节点击择并以自定义下拉列表代替。这仅适用于最多一个主节点和一个次节点！
             tags-field-name: 节点字段标签
             tags-field-name-placeholder: => flagrow-mason.forum.tags.tags-label
         titles:

@@ -10,10 +10,10 @@ flagrow-upload:
             error: 错误
     admin:
         templates:
-          image: 缺省图片下载模板
+          image: 默认图片下载模板
           image_description: >
               显示图片缩略图并经由 php 代理下载，支持统计及热链保护
-          file: 缺省文件下载模板
+          file: 默认文件下载模板
           file_description: >
               显示文件名称及基本信息，经由 php 代理下载，支持统计及热链保护
           image-preview: 完整图片预览模板
