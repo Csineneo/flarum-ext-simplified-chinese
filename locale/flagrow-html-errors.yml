@@ -1,7 +1,7 @@
 flagrow-html-errors:
   admin:
     settings:
-      title: 客制化错误页面
+      title: 客制化 HTML 错误页面
 
       error:
         403: 403 禁止访问
