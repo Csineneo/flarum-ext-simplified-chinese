@@ -13,7 +13,9 @@ issyrocks12-filter:
             placeholder: 要过滤的字符串
             filter_title: 要过滤的字符串
             email_label: 邮箱设置
-            switch: 当贴文被过滤时发信
+            switch:
+              email: 当贴文被过滤时发信
+              merge: 自动合并重复贴文
             email_subject: 主题
             email_body: 正文
         nav:
