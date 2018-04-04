@@ -1,0 +1,14 @@
+flagrow-html-errors:
+  admin:
+    settings:
+      title: 客制化错误页面
+
+      error:
+        403: 403 禁止访问
+        404: 404 页面未找到
+        500: 500 服务器错误
+        503: 503 服务不可用（下线维护）
+
+      placeholder:
+        empty_for_default: 留空以使用 Flarum 默认错误页面
+
