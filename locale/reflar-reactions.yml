@@ -4,6 +4,8 @@ reflar-reactions:
   forum:
     warning: 你的回应将被覆盖
     notification: '{username} 使用{reaction}回应了你的帖文'
+    settings:
+        notify_post_reacted_label: 某人回应了你的贴文
 
   admin:
     permissions:
